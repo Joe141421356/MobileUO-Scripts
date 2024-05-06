@@ -1,0 +1,47 @@
+//mining with pack animals
+
+if not @findalias 'pack'
+headmsg 'Select Pack Animal' '55'
+promptalias 'pack'
+endif
+
+while not dead
+
+if @findtype 0x0F39
+usetype 0x0F39 any backpack
+waitfortarget 3000
+
+if direction == 0
+  targettileoffset 0 -1 0
+elseif direction == 1
+  targettileoffset 1 -1 0
+elseif direction == 2
+  targettileoffset 1 0 0
+elseif direction == 3
+  targettileoffset 1 1 0
+elseif direction == 4
+  targettileoffset 0 1 0
+elseif direction == 5
+  targettileoffset -1 1 0
+elseif direction == 6
+  targettileoffset -1 0 0
+elseif direction == 7
+  targettileoffset -1 -1 0
+endif
+
+pause 850
+
+if @injournal 'no metal here' 'System'
+headmsg 'No More Metal Here!' '33'
+clearjournal
+
+while @findtype 0x19B9 any ground
+@moveitem 'found' 'pack'
+headmsg 'Moving Ore....' '66'
+pause 2500
+endwhile
+
+stop
+endif
+
+endwhile
