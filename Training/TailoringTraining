@@ -1,0 +1,27 @@
+while @findtype 0x0f9d any backpack
+
+usetype 0x0F9D any backpack
+waitforgump 0x38920ABD 15000
+replygump 0x38920ABD 21 
+pause 6000
+
+//change serial here
+//~40 shot pants: 0x152E
+//~48 fancy shrits: 0x1EFD
+//~53 fancy dress: 0x1F00
+//~74.6 robes: 0x1F03
+//~99.6 oil clothes(into bandage): 0x175D
+//~gm studded leather gorgets
+
+if @findtype 0x1F03 any backpack
+usetype 0x0F9F any backpack
+waitfortarget 30000
+target! 'found'
+pause 6000
+endif
+
+endwhile
+
+playsound 42
+messagebox 'End of Macro' 'Out of Tools'
+stop
