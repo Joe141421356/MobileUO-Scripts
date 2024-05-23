@@ -1,0 +1,19 @@
+//lockpick training
+//put key in box
+headmsg 'Select Box' '22'
+promptalias 'box'
+
+headmsg 'Select Key' '33'
+promptalias 'key'
+
+while @findtype 0x14fc any backpack
+
+usetype 0x14FC any backpack
+waitfortarget 30000
+target! 'box'
+pause 3500
+@useobject 'key'
+@target! 'box'
+pause 1000
+
+endwhile
