@@ -1,0 +1,8 @@
+//gate in
+//check ignore moongate prompt
+if @findtype 0xf6c 'any' 'ground' 1 1
+sysmsg 'Moongate found' 80
+useobject! 'found'
+else
+sysmsg 'Moongate not found' 24
+endif
