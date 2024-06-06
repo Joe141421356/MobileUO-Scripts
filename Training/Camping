@@ -1,0 +1,7 @@
+//camp training
+while @findtype 0x0DE1 any backpack
+useobject found
+pause 1000
+endwhile
+playsound 42
+headmsg 'no kindling' 33
