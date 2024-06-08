@@ -1,26 +1,23 @@
 //vet training using 2 pets
 headmsg 'choose pet1'
 promptalias 'pet1'
-pause 2000
 
 headmsg 'choose pet2'
 promptalias 'pet2'
-pause 2000
 
 headmsg 'choose bandage'
 promptalias 'bandage'
-pause 2000
 
 while not dead
 
 useobject 'bandage'
 waitfortarget 20000
 target 'pet1'
-pause 3000
 
 useobject 'bandage'
 waitfortarget 20000
 target 'pet2'
-pause 3000
+
+pause 5000
 
 endwhile
