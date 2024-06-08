@@ -1,0 +1,10 @@
+//mount toggle
+if not findalias 'pet1'
+promptalias 'pet1'
+endif
+if @mounted
+@useobject self
+elseif not @mounted
+msg 'all follow me' 88
+@useobject 'pet1'
+endif
