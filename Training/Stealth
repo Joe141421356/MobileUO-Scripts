@@ -1,0 +1,11 @@
+//stealth
+while not dead
+if not hidden
+useskill 'hiding'
+pause 10500
+endif
+if hidden
+useskill 'stealth'
+pause 10500
+endif
+endwhile
