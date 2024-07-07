@@ -1,0 +1,20 @@
+while not dead
+@getenemy 'gray' 'murderer'
+
+if @name 'enemy' == 'BBQ Bird Herd' and @inrange 'enemy' 25
+headmsg 'found BBQ Bird Herd' '44'
+playsound 61
+stop
+
+elseif @name 'enemy' == 'BBQ Swine Herd' and @inrange 'enemy' 25
+headmsg 'found BBQ Swine Herd' '44'
+playsound 61
+stop
+
+elseif @name 'enemy' == 'BBQ Cow Herd' and @inrange 'enemy' 25
+headmsg 'found BBQ Cow Herd' '44'
+playsound 61
+stop
+
+endif
+endwhile
