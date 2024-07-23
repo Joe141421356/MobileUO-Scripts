@@ -1,0 +1,7 @@
+//unload bods
+headmsg 'Select Bod Storage'
+promptalias 'bodstorage'
+while @findtype 0x14ef 1102 backpack or @findtype 0x14ef 1155 backpack
+moveitem found 'bodstorage'
+pause 700
+endwhile
