@@ -15,7 +15,7 @@ stop
 endif
 
 while not dead
-if @injournal 'accept' 'a bull' or @injournal 'accept' 'a grizzly bear' or @injournal 'accept' 'a great hart' @injournal 'accept' 'a panther' or @injournal 'accept' 'a grey wolf' or @injournal 'accept' 'a cougar' or @injournal 'accept' 'a brown bear' or @injournal 'accept' 'a llama' or @injournal 'accept' 'a black bear' or @injournal 'accept' 'a horse' or @injournal 'accept' 'a boar' or @injournal 'accept' 'a timber wolf' or @injournal 'accept' 'a hind'
+if @injournal 'accept' 'a bull' or @injournal 'accept' 'a grizzly bear' or @injournal 'accept' 'a great hart' or @injournal 'accept' 'a panther' or @injournal 'accept' 'a grey wolf' or @injournal 'accept' 'a cougar' or @injournal 'accept' 'a brown bear' or @injournal 'accept' 'a llama' or @injournal 'accept' 'a black bear' or @injournal 'accept' 'a horse' or @injournal 'accept' 'a boar' or @injournal 'accept' 'a timber wolf' or @injournal 'accept' 'a hind'
 
 rename 'enemy' 'once'
 pause 1000
@@ -29,7 +29,7 @@ playsound 42
 stop
 endif
 
-if @injournal 'fail' 'a bull' or @injournal 'fail' 'a grizzly bear' or @injournal 'fail' 'a great hart' @injournal 'fail' 'a panther' or @injournal 'fail' 'a grey wolf' or @injournal 'fail' 'a cougar' or @injournal 'fail' 'a brown bear' or @injournal 'fail' 'a llama' or @injournal 'fail' 'a black bear' or @injournal 'fail' 'a horse' or @injournal 'fail' 'a boar' or @injournal 'fail' 'a timber wolf' or @injournal 'fail' 'a hind'
+if @injournal 'fail' 'a bull' or @injournal 'fail' 'a grizzly bear' or @injournal 'fail' 'a great hart' or @injournal 'fail' 'a panther' or @injournal 'fail' 'a grey wolf' or @injournal 'fail' 'a cougar' or @injournal 'fail' 'a brown bear' or @injournal 'fail' 'a llama' or @injournal 'fail' 'a black bear' or @injournal 'fail' 'a horse' or @injournal 'fail' 'a boar' or @injournal 'fail' 'a timber wolf' or @injournal 'fail' 'a hind'
 clearjournal
 break
 endif
