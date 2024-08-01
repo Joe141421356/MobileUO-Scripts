@@ -15,7 +15,7 @@ stop
 endif
 
 while not dead
-if @injournal 'accept' 'a bull' or @injournal 'accept' 'a grizzly bear' or @injournal 'accept' 'a great hart' or @injournal 'accept' 'a panther' or @injournal 'accept' 'a grey wolf' or @injournal 'accept' 'a cougar' or @injournal 'accept' 'a brown bear' or @injournal 'accept' 'a llama' or @injournal 'accept' 'a black bear' or @injournal 'accept' 'a horse' or @injournal 'accept' 'a boar' or @injournal 'accept' 'a timber wolf' or @injournal 'accept' 'a hind' or @injournal 'accept' 'a white wolf' or 'accept' 'a polar bear' or @injournal 'accept' 'a snow leopard'
+if @injournal 'accept' 'a bull' or @injournal 'accept' 'a grizzly bear' or @injournal 'accept' 'a great hart' or @injournal 'accept' 'a panther' or @injournal 'accept' 'a grey wolf' or @injournal 'accept' 'a cougar' or @injournal 'accept' 'a brown bear' or @injournal 'accept' 'a llama' or @injournal 'accept' 'a black bear' or @injournal 'accept' 'a horse' or @injournal 'accept' 'a boar' or @injournal 'accept' 'a timber wolf' or @injournal 'accept' 'a hind' or @injournal 'accept' 'a white wolf' or @injournal 'accept' 'a polar bear' or @injournal 'accept' 'a snow leopard'
 
 rename 'enemy' 'once'
 msg 'all guard'
