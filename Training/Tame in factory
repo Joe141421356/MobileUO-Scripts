@@ -1,0 +1,25 @@
+//tame in factory
+clearjournal
+
+while not dead
+
+useskill 'Animal Taming'
+waitfortarget 3000
+target last
+
+while not dead
+
+if @injournal 'accept' 'three' or @injournal 'accept' 'athree'
+clearjournal
+playsound 42
+stop
+endif
+
+if @injournal 'fail' 'three' or @injournal 'fail' 'athree'
+clearjournal
+break
+endif
+
+endwhile
+
+endwhile
