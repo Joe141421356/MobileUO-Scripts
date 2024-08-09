@@ -1,0 +1,6 @@
+promptalias 'pet'
+rename 'pet' 'four'
+msg 'four release'
+waitforcontext 'enemy' 8 2000
+waitforgump 0x909cc741 15000
+@replygump 0x909cc741 2
