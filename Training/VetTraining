@@ -13,11 +13,10 @@ while not dead
 useobject 'bandage'
 waitfortarget 20000
 target 'pet1'
-
+pause 5000
 useobject 'bandage'
 waitfortarget 20000
 target 'pet2'
-
 pause 5000
 
 endwhile
