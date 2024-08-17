@@ -1,0 +1,25 @@
+//disco closest mob
+if not timerexists 'birdtimer'
+createtimer 'birdtimer'
+settimer 'birdtimer' 12000
+endif
+if timer 'birdtimer' < 12000
+headmsg 'wait...' 11
+stop
+endif
+
+if targetexists
+canceltarget
+endif
+
+@getenemy 'enemy' 'gray' 'murderer' 'criminal' 'closest'
+if @inrange 'enemy' 10
+useskill 'discordance'
+waitfortarget 10000
+target! enemy
+clickobject enemy
+settimer 'birdtimer' 0
+else
+headmsg 'no mob found' 11
+stop
+endif
